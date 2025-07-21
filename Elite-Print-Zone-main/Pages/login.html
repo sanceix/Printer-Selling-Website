@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--head tag is used to define section of html-->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <!--linking JavaScript in html-->
+    <script src="../JS/myscript.js"></script>
+
+    <!--linking css in html-->
+    <link rel="stylesheet" href="../css/style.css" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      /*this is how we comment in css*/
+      body/*internal css is used*/ {
+        background-image: url(../Images/Screenshot_2024-01-05_1845251.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <!--body tag defines the htmls body-->
+      <div class="hero">
+        <!--div tag is used as container for html element-->
+        <nav>
+          <!--nav tag defines set of navigation links-->
+          <!--anchor tag create hyperlinks in webpages-->
+          <a href="Home.html"
+            ><img
+              src="../Images/Removal-643.png"
+              alt="logo"
+              width="150px"
+              height="125px"
+          /></a>
+          <ul>
+            <!--ul tag defines unordered lists-->
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="ProductPage.html">Products</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li><a href="Research.html">Research</a></li>
+            <li><a href="About us.html">About</a></li>
+            <!--li tag is used to represent an item in a list-->
+          </ul>
+
+          <ul>
+            <li class="search">
+              <a href="#"
+                ><img
+                  src="../Images/icons8-search-50.png"
+                  alt="search"
+                  width="20px"
+                  height="20px"
+              /></a>
+            </li>
+            <li class="shopping">
+              <a href="#"
+                ><img
+                  src="../Images/icons8-shopping-cart-50.png"
+                  alt="shoping cart"
+                  width="20px"
+                  height="20px"
+              /></a>
+            </li>
+            <li class="person">
+              <a href="../Pages/login.html"
+                ><img
+                  src="../Images/icons8-person-24.png"
+                  alt="person"
+                  width="20px"
+                  height="20px"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="containerr"><!--div tag is used as container for html element-->
+      <form actions="" class="form" name="signupForm" onsubmit="validateForm()"><!--form-->
+        <h2>SIGN IN</h2>
+        <input
+          type="email"
+          name="email"
+          class="box"
+          placeholder="Enter Email"
+        /><!--input tag is used to create interactive controls for web based forms in order to accept data from the user-->
+        <input
+          type="password"
+          name="password"
+          class="box"
+          placeholder="Enter Password"
+        />
+        <input type="submit" value="SIGN IN" id="submit" />
+        <a href="">Forgot Password?</a>    <!--anchor tag create hyperlinks in webpages-->
+      </form>
+    </div>
+    <br /><!--br tag inserts single line break-->
+    <footer>
+      <!--footer tag defines footer ofan html document-->
+      <div class="footer-content">
+        <h3><b>Elite Print Zone</b></h3><!--b tag is used to bold the text-->
+        <p>"Unleash Creativity, Print Possibilities"</p>
+        <ul class="socials">
+          <li>
+            <a href="#"
+              ><img
+                src="../Images/Facebook-icon-design-on-transparent-background-PNG.png"
+                alt="Facebook icon"
+                width="20px"
+                height="20px"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Images/Black-icon-Instagram-logo-transparent-PNG.png"
+                alt="Instagram icon"
+                width="20px"
+                height="20px"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Images/Youtube-icon-symbol-on-transparent-background-PNG.png"
+                alt="Youtube icon"
+                width="20px"
+                height="20px"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Images/Black-linkedin-logo-design-on-transparent-background-PNG.png"
+                alt="Linkedin icon"
+                width="20px"
+                height="20px"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Images/Black-icon-Twitter-logo-transparent-PNG.png"
+                alt="Twitter icon"
+                width="20px"
+                height="20px"
+            /></a>
+          </li>
+        </ul>
+        <ul class="socials">
+          <li><a href="../Pages/Home.html">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="footer-bottom">
+          copyright &copy;2024 <span>Elite Print Zone</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

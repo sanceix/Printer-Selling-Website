@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--head tag is used to define section of html-->
+    <title>Home Page</title>
+    <meta name="author" content="Sanshree Shrestha" />
+    <meta name="Description" content="HomePage" />
+    <meta name="Keywords" content="Home" />
+
+    <style>
+      /*this is how we comment in css*/
+      body/*internal css is used*/ {
+        background-image: url(../Images/Screenshot_2024-01-05_1845251.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+      }
+    </style>
+
+    <!--linking css in html-->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+  <body>
+    <!--body tag defines the htmls body-->
+    <div class="hero">
+      <!--div tag is used as container for html element-->
+      <nav>
+        <!--nav tag defines set of navigation links-->
+        <!--anchor tag create hyperlinks in webpages-->
+        <a href="Home.html"
+          ><img
+            src="../Images/Removal-643.png"
+            alt="logo"
+            width="150px"
+            height="125px"
+        /></a>
+        <ul>
+          <!--ul tag defines unordered lists-->
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="ProductPage.html">Products</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+          <li><a href="Research.html">Research</a></li>
+          <li><a href="About us.html">About</a></li>
+          <!--li tag is used to represent an item in a list-->
+        </ul>
+
+        <ul>
+          <li class="search">
+            <a href="#"
+              ><img
+                src="../Images/icons8-search-50.png"
+                alt="search"
+                width="20px"
+                height="20px"
+            /></a>
+          </li>
+          <li class="shopping">
+            <a href="#"
+              ><img
+                src="../Images/icons8-shopping-cart-50.png"
+                alt="shoping cart"
+                width="20px"
+                height="20px"
+            /></a>
+          </li>
+          <li class="person">
+            <a href="login.html"
+              ><img
+                src="../Images/icons8-person-24.png"
+                alt="person"
+                width="20px"
+                height="20px"
+            /></a>
+          </li>
+          <br />
+          <br />
+          <p id="date"></p>
+          <script>
+            /*java script is used to set and display date and time*/
+            function display_date() {
+              document.getElementById("date").innerHTML = Date();
+              setTimeout(display_date, 1000);
+            }
+            display_date();
+          </script>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="super">
+      <h1>"Bringing digital dreams to paper reality"</h1>
+      <!--h1 tag is used to indicate primary topic of webpages-->
+    </div>
+    <br /><!--br tag inserts single line break-->
+    <br />
+    <br />
+    <div class="icons">
+      <h1
+        class="OFFER"
+        style="text-align: center; color: #ec0c0cd7; font-family: sans-serif"
+      >
+        OFFER OFFER OFFER!!!
+      </h1>
+      <!--inline css in html-->
+      <br />
+      <!--inline css is used-->
+      <h1 class="deal" style="text-align: center; color: rgb(12, 2, 2)">
+        <mark>You can get super valued deals on quality products.</mark>
+      </h1>
+      <br />
+    </div>
+    <div class="image">
+      <!--adding image -->
+      <img
+        src="../Images/ream-removebg-preview.png"
+        alt="ream image"
+        width="300px"
+      />
+      <h1 class="lalala" style="text-align: center">
+        <mark>"Get a ream for free on the purchase of every printer"</mark>
+      </h1>
+      <!--mark tag is used to highlight any text-->
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="print">
+      <header>
+        <!--header tag is used to differntiate headings h1 and subheading
+        h2-h6 of a page from rest of the content-->
+        <section>
+          <!--section tag group together related elements-->
+          <!--INLINE CSS IS USED-->
+          <h1
+            class="hrf"
+            style="
+              font-family: 'Courier New', Courier, monospace;
+              color: rgb(6, 8, 10);
+              text-align: center;
+            "
+          >
+            <a href="#" style="color: black"><u>Our Featured Products</u></a>
+          </h1>
+          <h1 class="shop" style="text-align: center">
+            <a href="#" style="color: rgb(215, 20, 20)"
+              ><span style="background-color: whitesmoke">SHOP NOW</span></a
+            >
+          </h1>
+          <table width="100%">
+            <!--table tag represents tabular data-->
+            <tr>
+              <!--tr tag is used to define row in a table-->
+              <th>
+                <!--th tag defines header cell in html table-->
+                <a href="Printer5.html"
+                  ><img
+                    src="../Images/Printer5_1-removebg-preview.png"
+                    alt="printer image"
+                    width="300px"
+                /></a>
+                <h1><u>EPSON L6460</u></h1>
+                <!--u tag is used to underline any statement-->
+              </th>
+              <th>
+                <a href="Printer3.html"
+                  ><img
+                    src="../Images/Printer3_1.jpg"
+                    alt="printerimage"
+                    width="400px"
+                /></a>
+                <h1><u>PIXMA TR4720</u></h1>
+              </th>
+              <th>
+                <a href="Printer4.html"
+                  ><img
+                    src="../Images/Printer4_1-removebg-preview.png"
+                    alt="printer image"
+                /></a>
+                <h1><u>EPSON ECO TANK L5590</u></h1>
+              </th>
+              <th>
+                <a href="Printer8.html">
+                  <img
+                    src="../Images/Printer8_1-removebg-preview.png"
+                    alt="printer image"
+                    width="350px"
+                /></a>
+                <h1>
+                  <u>HP LASER MULTIFUNCTION<br />PRINTER</u>
+                </h1>
+              </th>
+            </tr>
+          </table>
+        </section>
+      </header>
+    </div>
+    <br />
+    <br />
+    <br />
+
+    <div class="review">
+      <h1><a href="#">Customers review</a></h1>
+      <table width="100%">
+        <tr>
+          <th>
+            <div class="slide-row">
+              <div class="slide-col">
+                <div class="user-text">
+                  <!--p tag defines paragraph-->
+                  <p>
+                    "Brilliant Service"<br />Easy to use the website, not had
+                    any issues with products provided, team very helpful.
+                  </p>
+                  <h3>Sarah Williams</h3>
+                  <p>Zara Inc.</p>
+                </div>
+                <div class="user-img">
+                  <img
+                    src="../Images/f11-removebg-preview.png"
+                    alt="female photo"
+                  />
+                </div>
+              </div>
+              <div class="slide-col">
+                <div class="user-text">
+                  <p>
+                    "Great service"<br />
+                    I can honestly say the service i have received from Elite
+                    Print Zone has been fantastic.<br />
+                    Over the years i've used many printers but none <br />come
+                    close.
+                  </p>
+                  <h3>Anthony Murray</h3>
+                  <p>Nexus Networks</p>
+                </div>
+                <div class="user-img">
+                  <img
+                    src="../Images/m1-removebg-preview.png"
+                    alt="male photo"
+                  />
+                </div>
+              </div>
+            </div>
+          </th>
+        </tr>
+        <tr>
+          <th>
+            <div class="slide-row">
+              <div class="slide-col">
+                <div class="user-text">
+                  <p>
+                    "So easy..."<br />
+                    Am new to the publicity field, and just needed a simple
+                    low-cost option.<br />
+                    Elite Print Zone fitted the bill perfectly.<br />
+                    thanks very much!
+                  </p>
+                  <h3>Carol Wyatt</h3>
+                  <p>Workspace Hub</p>
+                </div>
+                <div class="user-img">
+                  <img
+                    src="../Images/f2-removebg-preview.png"
+                    alt="female photo"
+                  />
+                </div>
+              </div>
+              <div class="slide-col">
+                <div class="user-text">
+                  <p>
+                    "Fantastic service & very professional"<br />
+                    Amazing service from start to finish.... Good listening and
+                    really helpful team.
+                  </p>
+                  <h3>David Jonas</h3>
+                  <p>Inspire Interchange</p>
+                </div>
+                <div class="user-img">
+                  <img
+                    src="../Images/m22-removebg-preview.png"
+                    alt="male photo"
+                  />
+                </div>
+              </div>
+            </div>
+          </th>
+        </tr>
+      </table>
+    </div>
+
+    <br /><br /><br /><br /><br /><br />
+    <br /><br /><br /><br /><br /><br />
+    <footer>
+      <!--footer tag defines footer ofan html document-->
+      <div class="footer-content">
+        <h3><b>Elite Print Zone</b></h3>
+        <!--h3 tag defines level three heading-->
+        <p>"Unleash Creativity, Print Possibilities"</p>
+        <ul class="socials">
+          <li>
+            <a href="#"
+              ><img
+                src="../Images/Facebook-icon-design-on-transparent-background-PNG.png"
+                alt="Facebook icon"
+                width="20px"
+                height="20px"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Images/Black-icon-Instagram-logo-transparent-PNG.png"
+                alt="Instagram icon"
+                width="20px"
+                height="20px"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Images/Youtube-icon-symbol-on-transparent-background-PNG.png"
+                alt="Youtube icon"
+                width="20px"
+                height="20px"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Images/Black-linkedin-logo-design-on-transparent-background-PNG.png"
+                alt="Linkedin icon"
+                width="20px"
+                height="20px"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img
+                src="../Images/Black-icon-Twitter-logo-transparent-PNG.png"
+                alt="Twitter icon"
+                width="20px"
+                height="20px"
+            /></a>
+          </li>
+        </ul>
+        <ul class="socials">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+        <p class="footer-bottom">
+          copyright &copy;2024 <span>Elite Print Zone</span>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>
